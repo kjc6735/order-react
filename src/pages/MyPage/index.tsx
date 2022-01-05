@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
-
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css'
+import './styles.css'
+import OrderList from '../../components/OrderList'
 const Ul = styled.ul`
   list-style: none;
   padding-left: 0;
@@ -39,8 +42,9 @@ const MyPage = () => {
         </Ul>
       </div>
       <div className="contents" style={{ flex: 1, padding: '50px' }}>
-        <div>title</div>
-        
+        <h1>주문 내역</h1>
+        <Calendar />
+        <OrderList />
       </div>
     </div>
   )
