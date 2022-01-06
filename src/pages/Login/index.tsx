@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import { login } from '../../api'
 import useInput from '../../hooks/useInput'
+import { RootState } from '../../slices'
 import AuthTemplate from '../../templates/AuthTemplate'
 
 const Login = () => {
@@ -10,7 +12,6 @@ const Login = () => {
   })
   const onSubmit = async (e: any) => {
     e.preventDefault()
-    console.log(data)
     const response = await login(data)
     if (response === true) {
       console.log('성공')

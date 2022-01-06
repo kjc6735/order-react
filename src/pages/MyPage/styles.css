@@ -3,3 +3,12 @@
   border: none;
   align-content: stretch;
 }
+
+.highlight {
+  color: blue;
+  background: #fdd835;
+}
+
+.highlight .abbr {
+  border-radius: 50%;
+}
