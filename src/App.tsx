@@ -10,6 +10,7 @@ import Modal from './components/Modal'
 import rootReducer from './slices'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
+import History from './pages/History'
 const store = configureStore({ reducer: rootReducer })
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/history" element={<History />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/mypage" element={<MyPage />} />
